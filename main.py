@@ -8,11 +8,11 @@ import weather_scraper
 #Hide turtle module turtle
 turt = turtle.Turtle()
 turt.hideturtle()
-#Time Stamps
 
-james = 1592399416 #Low Tide morning of 6/13/2020 in Cape Charles Harbor
-piank = 1592378296
-mobjack = 1592370976
+#Time Stamps
+james = 1592399416 #Closest low tide from when program was written for James River Locks
+piank = 1592378296 #Closest low tide from when program was written for Cherry Point on the Piankatank
+mobjack = 1592370976 #Closest low tide from when program was written for the Severn River in Mobjack Bay
 
 #Location Latitudes and Longitudes
 james_lat = '37.5'
