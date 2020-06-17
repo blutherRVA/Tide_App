@@ -1,14 +1,14 @@
 
 import time
 
-james = 1592399416 #Low Tide morning of 6/13/2020 in Cape Charles Harbor
+james = 1592399416
 piank = 1592378296
 mobjack = 1592370976
 
 
 def time_keeper(time_stamp):
     time_since_stamp = time.time() - time_stamp
-    time_since_last_low = time_since_stamp % 44700
+    time_since_last_low = time_since_stamp % 44700 #44700 is the number of seconds in 12 hrs 25 minutes, or one full tide cycle
     return time_since_last_low
 
 
