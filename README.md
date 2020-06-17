@@ -1,3 +1,3 @@
 # Tide_App
-Tide Clock and Weather Scraper Desktop App for Tidewater Virginia Locations. 
+Tide clock and weather scraper desktop app for Tidewater Virginia locations. 
 Display is with Turtle Graphics Module
