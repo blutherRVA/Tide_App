@@ -7,17 +7,16 @@ lon_ex = '-76.3'
 
 
 def weath(lat, long):
-    # This is the URL that your login form poits to with the "action" tag
+    # This is the URL that your login form points to with the "action" tag
     post_login_url = 'https://home.openweathermap.org/users/sign_in'
 
     request_url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=' + keys2.apiKey
 
     # Dictionary to create login payload
-    # OpenWeatherMap API Key  '02ef7d3c631464e3f8249a426469f7dc'
 
     payload = {
-        'username': 'bluther12',
-        'pass': 'largemouthweather'
+        'username': keys2.apiUserName,
+        'pass': keys2.apiPassWord
     }
 
     with requests.Session() as session:
@@ -37,7 +36,7 @@ def wind(lat, long):
     request_url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=' + keys2.apiKey
 
     # Dictionary to create login payload
-    # OpenWeatherMap API Key  'keys.key'
+
 
     payload = {
         'username': keys2.apiUserName,
@@ -79,7 +78,7 @@ def wind_dir(lat, long):
         elif 270 <= wind_current < 360:
             return 'NW'
         else:
-            return 'No Wind Date'
+            return 'No Wind Data'
 
 
 if __name__ == "__main__":
