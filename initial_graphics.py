@@ -1,10 +1,12 @@
 import turtle
-
+turt = turtle.Turtle()
+turt.hideturtle()
 
 def win_open():
     turtle_screen = turtle.Screen()
     turtle_screen.setup(width=1280, height=800)
     turtle_screen.bgcolor("orange")
+
 
 
 def tide_scale():
@@ -30,8 +32,8 @@ def tide_scale():
     poq.goto(400, 200)
     title.write("Virginia Coastal Tides & Weather", align="center", font=("Arial", 20, "bold"))
     james.write("James River - Richmond", align="center", font=("Arial", 16, "bold"))
-    pr.write("Piankatank River - Gwynn's Island", align="center", font=("Arial", 16, "bold"))
-    poq.write("Poquoson River - Plum Island", align="center", font=("Arial", 16, "bold"))
+    pr.write("Piankatank River", align="center", font=("Arial", 16, "bold"))
+    poq.write("Mobjack Bay", align="center", font=("Arial", 16, "bold"))
     james.goto(- 330, 150)
     james.write("High Tide", align="center", font=("Arial", 12, "bold"))
     pr.goto(70, 150)
